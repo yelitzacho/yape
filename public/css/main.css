@@ -1,0 +1,50 @@
+*{
+	font-family: 'Roboto', sans-serif;
+}
+.row{
+	margin: 0;
+}
+/*===WELCOME===*/
+
+/*Carousel*/
+.carousel{
+	height: 60vh !important;
+	margin-top: 22%;
+}
+.carousel .carousel-item h3{
+	font-size: 68px;
+	font-weight: 500;
+}
+.carousel .carousel-item p{
+	font-size: 44px !important;
+}
+.carousel .carousel-item img{
+	width: 48vw;
+  height: auto;
+}
+.carousel .indicators .indicator-item{
+	background-color: #f8f8f8;
+	width: 34px;
+	height: 34px;
+	margin: 24px 14px;
+}
+.carousel .indicators .indicator-item.active{
+	background-color: #f64552;
+}
+.button-yellow{
+	background-color: #fbd43b;
+	margin-top: 12%;
+}
+/*.button-yellow:hover{
+	background-color: #fbd43b;
+}*/
+.btn{
+	height: 7vh;
+	box-shadow: none;
+	border-radius: 10px;
+	font-size: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
