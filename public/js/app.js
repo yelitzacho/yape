@@ -8,7 +8,7 @@ const render = (root) => {
   	render(root);
   }
 
-  container.append(RegisterCode(update));
+  container.append(Check(update));
   root.append(container);
   $('.carousel.carousel-slider').carousel({fullWidth: true});
 

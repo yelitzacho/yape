@@ -106,3 +106,22 @@
 	bottom: 10rem;
   left: 4rem;
 }
+
+
+.check{
+	background-color: #fbd43b;
+	margin: 0;
+}
+.container{
+	margin:0;
+	width: 100%;
+	height: 100vh;
+}
+.root{
+	margin: 0;
+	height: 100vh;
+}
+.check .col{
+	height: 100vh;
+	background-color: #fbd43b;
+}
