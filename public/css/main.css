@@ -57,8 +57,38 @@
 .information{
 	margin-top: 25%;
 }
+.input-field{
+	margin-top: 6rem;
+}
+.input-field img{
+	position: absolute;
+	bottom: 21rem;
+}
+.input-field input[type=text]{
+	height: 8.7rem;
+	font-size: 4rem;
+	padding-left: 20rem;
+	box-sizing: border-box;
+}
 .input-field p label{
-	font-size: 30px;
+	font-size: 38px;
 	left: 0;
-	padding-left: 60px;
+	padding-left: 75px;
+}
+[type="checkbox"].filled-in:not(:checked) + label:after{
+	width: 35px;
+	height: 35px;
+	border: 1px solid #797979;
+}
+[type="checkbox"].filled-in:checked + label:after{
+	width: 35px;
+	height: 35px;
+}
+[type="checkbox"].filled-in:checked + label:before{
+	width: 14px;
+	height: 25px;
+  border-top: 4px solid transparent;
+  border-left: 4px solid transparent;
+  border-right: 4px solid #fff;
+  border-bottom: 4px solid #fff;
 }
