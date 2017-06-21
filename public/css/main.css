@@ -67,7 +67,7 @@
 .input-field input[type=text]{
 	height: 8.7rem;
 	font-size: 4rem;
-	padding-left: 20rem;
+	padding-left: 22rem;
 	box-sizing: border-box;
 }
 .input-field p label{
@@ -91,4 +91,18 @@
   border-left: 4px solid transparent;
   border-right: 4px solid #fff;
   border-bottom: 4px solid #fff;
+}
+/*===REGISTER CODE===*/
+
+/*Information*/
+.registerCode{
+	margin-top: 25%;
+}
+.registerCode .input-field label{
+	position: static;
+}
+.registerCode .input-field img{
+	position: absolute;
+	bottom: 10rem;
+  left: 4rem;
 }

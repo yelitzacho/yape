@@ -7,17 +7,15 @@ const render = (root) => {
   const update = function(){
   	render(root);
   }
-  
-  // container.append(Welcome(update));
 
-  // const button = $('<a class="col s12 btn center-block button-yellow">REGISTRARME</a>');
-  // button.click(function(){
-  //   console.log(button);
-  // })
-  container.append(RegisterNumber(update));
-  
+  container.append(RegisterCode(update));
   root.append(container);
   $('.carousel.carousel-slider').carousel({fullWidth: true});
+
+  // $('.register').on('click', function(){
+  //   root.empty();
+  //   container.append(RegisterNumber(update));
+  // });
 }
 
 $( _ => {

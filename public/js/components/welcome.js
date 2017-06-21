@@ -16,7 +16,7 @@ const Welcome = (update) =>{
 	const imgItem3 = $('<img src="img/icons/group-people.png" alt="group people">');
 	const titleItem3 = $('<h3 class="titleMovil center-align">Gratis y Seguro</h3>');
 	const descriptionItem3 = $('<p class="description center-align">La transferencia es inmediata y gratuita de una cuenta a otra.</p>');
-	const button = $('<a class="col s12 btn center-block button-yellow">REGISTRARME</a>');
+	const button = $('<a class="register col s12 btn center-block button-yellow">REGISTRARME</a>');
 
 	carouselItem1.append(imgItem1, titleItem1, descriptionItem1);
 	carouselItem2.append(imgItem2, titleItem2, descriptionItem2);

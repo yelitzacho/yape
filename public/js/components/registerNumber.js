@@ -16,7 +16,7 @@ const RegisterNumber = (update) =>{
 	const checkboxContainer = $('<p></p>');
 	const checkbox = $('<input type="checkbox" class="filled-in" id="filled-in-box"/>');
 	const labelCheckbox =$('<label for="filled-in-box">Acepto los <a href="#">Términos y condiciones</a></label>');
-	const buttonContinue = $('<a class="btn center-block button-yellow">CONTINUAR</a>');      
+	const buttonContinue = $('<a class="btn cenock button-yellow disabled" dis>CONTINUAR</a>');      
 
 	containerInformation.append(imgMovil, titleMovil, descriptionMovil);
 	checkboxContainer.append(checkbox, labelCheckbox);
@@ -25,8 +25,4 @@ const RegisterNumber = (update) =>{
 	rowRegister.append(colRegister);
 
 	return rowRegister;
-}
-
-const ValidateForm = () => {
-
 }
