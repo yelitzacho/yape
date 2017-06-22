@@ -65,12 +65,12 @@
 }
 .input-field img{
 	position: absolute;
-	bottom: 18rem;
+	bottom: 20rem;
 }
 .input-field input[type=number]{
 	height: 7rem;
 	font-size: 3.5rem;
-	padding-left: 18rem;
+	text-align: center;
 	box-sizing: border-box;
 }
 .input-field p label{
@@ -110,9 +110,21 @@
 }
 .registerCode .input-field img{
 	position: absolute;
-	bottom: 10rem;
-  left: 4rem;
+	bottom: 4rem;
+  	left: 4rem;
 }
+.registerCode #inputValidate{
+	height: 7rem;
+	font-size: 3.5rem;
+	text-align: center;
+	box-sizing: border-box;
+}
+.registerCode .description span{
+	font-weight: 600;
+	color: #5d5d5d;
+}
+
+
 
 /*===CHECKING===*/
 

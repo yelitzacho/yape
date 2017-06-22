@@ -6,7 +6,7 @@ const RegisterCode = (update) =>{
 	const containerCode = $('<div></div>');
 	const imgCode = $('<img class="center-block" src="img/icons/message.png" alt="phone">');
 	const titleCode = $('<h3 class="titleMovil center-align">Ahora ingresa tu código</h3>');
-	const descriptionCode = $('<p class="description center-align">Enviaremos un SMS con el código de validación al número</p>');
+	const descriptionCode = $('<p class="description center-align">Enviaremos un SMS con el código de validación al número <span>997528963</span></p>');
 	const inputCode = $('<div class="input-field col s12"></div>');
 	const imgInput = $('<img src="img/icons/lock.png">');
 	const inputValidate = $('<input id="inputValidate" type="text" class="validate" placeholder="-  -  -  -  -">');

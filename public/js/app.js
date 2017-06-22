@@ -46,8 +46,10 @@ const render = (root) => {
     update();
   });
 
+  const codePattern = /^(\b[0-9]{5}\b)*$/;
+
   $('#inputValidate').keyup(function(){
-    if ($(this).val() === 12345) {
+    if ($('#inputValidate').val().length == 5) {
       state.components = "Check"
       update();
     }
