@@ -123,8 +123,30 @@
 	font-weight: 600;
 	color: #5d5d5d;
 }
+/*===CREATE USER===*/
 
-
+.createUser .input-field img{
+	left: 2rem;
+}
+.createUser .input-field img:first-child{
+	bottom: 28rem;
+}
+.createUser .input-field img:nth-child(3){
+	bottom: 20rem;
+}
+.createUser .input-field img:nth-child(5){
+	bottom: 11rem;
+}
+.createUser .input-field input{
+	height: 7rem;
+	font-size: 3rem;
+	text-align: center;
+	box-shadow: none;
+}
+.createUser .input-field p{
+	margin-top: 30px;
+	margin-bottom: 40px;
+}
 
 /*===CHECKING===*/
 

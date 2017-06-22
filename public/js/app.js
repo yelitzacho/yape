@@ -36,7 +36,7 @@ const render = (root) => {
 
   $('#phone').keyup(function(){
     if ($('#phone').val().length == 9) {
-      console.log(valor.length);
+      // console.log(valor.length);
       $('#continue').removeAttr('disabled');
     }
   });
@@ -50,10 +50,33 @@ const render = (root) => {
 
   $('#inputValidate').keyup(function(){
     if ($('#inputValidate').val().length == 5) {
-      state.components = "Check"
+      state.components = "CreateUser"
       update();
     }
   });
+
+  $('#newUser').attr('disabled','disabled');
+
+  $('#inputName').keyup(function(){
+    if ($('#inputName').val().length < 1) {
+      return false
+    } else if ($('#inputMail').val().length < 1) {
+      return false;
+    } else if ($('#inputLock').val().length) {
+      return false;
+    } else {
+      $('#newUser').removeAttr('disabled');
+    }
+  });
+
+  $('#newUser').on('click', function(){
+    state.components = "Check"
+    update();
+  });
+
+
+ //  $('#continue').removeAttr('disabled');
+ //     }
 
   // $('#filled-in-box').change(function(){
   //   if ($('#phone').val().length == 9 &&
