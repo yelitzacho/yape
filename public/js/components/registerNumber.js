@@ -25,5 +25,17 @@ const RegisterNumber = (update) =>{
 	colRegister.append(formRegister);
 	rowRegister.append(colRegister);
 
+	// buttonContinue.attr('disabled','disabled');
+
 	return rowRegister;
+
+	// const numberPattern = /^(\b[9]{1}[0-9]{8}\b)*$/;
+
+	// $('#phone').keyup(function(){
+	//   if ($('#phone').val().length == 9) {
+	//     if ($('#filled-in-box').prop('checked') == true){
+	//     	$('#phone').removeAttr('disabled');
+	//     }
+	//   };
+	// });
 }

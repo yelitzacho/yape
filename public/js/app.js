@@ -21,11 +21,24 @@ const render = (root) => {
   }
 
   root.append(container);
+
   $('.carousel.carousel-slider').carousel({fullWidth: true});
 
   $('.register').on('click', function(){
     state.components = "RegisterNumber"
     update();
+  });
+
+  $('#continue').attr('disabled','disabled');
+
+  const numberPattern = /^(\b[9]{1}[0-9]{8}\b)*$/;
+  const valor = $('#phone').val();
+
+  $('#phone').keyup(function(){
+    if ($('#phone').val().length == 9) {
+      console.log(valor.length);
+      $('#continue').removeAttr('disabled');
+    }
   });
 
   $('#continue').on('click', function(){
@@ -40,58 +53,12 @@ const render = (root) => {
     }
   });
 
-  // $('#continue').attr('disabled','disabled');
-
-
   // $('#filled-in-box').change(function(){
   //   if ($('#phone').val().length == 9 &&
   //      ($('filled-in-box').prop('checked') == true)){
   //         $('#continue').removeAttr('disabled');
   //   }
   // })
-
-  // let numberPattern = /\b[9]{1}[0-9]{8}\b/;
-  // $('#phone').on('keyup', () =>{
-  //   if ($('#phone').val().length == 9) {
-  //     if ($('#filled-in-box').is(':checked') ? true : false) {
-  //       $('#continue').removeAttr('disabled');
-  //     } else {
-  //       $('#continue').attr('disabled','disabled');
-  //   }
-  // }});
-
-  // if (($('#phone').val()).length == 9) {
-  //   if($('#filled-in-box').prop('checked') == true){
-  //     $('#continue').removeAttr('disabled');
-  //   } else {
-  //     $('#continue').attr('disabled','disabled');
-  //   }
-  // }
-
-
-//   if ($('#phone').val().length == 9 || isNaN($('#phone').val())) {
-//     return false;
-//   }
-
-//     if($(this).val() !=''){
-//       $('#continue').removeAttr('disabled');
-//     }
-
-// function checkRadioBox(nameRadioBox) {
-//   return $(nameRadioBox).is(":checked") ? true : false;
-// }
-
-  // function checkForm(idForm) {
-  //   $(idForm)+" *".on("change keydown", function(){
-  //     if (checkInput("#phone", numberPattern) &&
-  //       checkBox("#filled-in-box"))
-  //     {
-  //       enableSubmit(idForm);
-  //     }else{
-  //       disableSubmit(idForm);
-  //     }
-  //   });
-  // }
 
 }
 
