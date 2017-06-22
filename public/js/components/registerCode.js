@@ -9,7 +9,7 @@ const RegisterCode = (update) =>{
 	const descriptionCode = $('<p class="description center-align">Enviaremos un SMS con el código de validación al número</p>');
 	const inputCode = $('<div class="input-field col s12"></div>');
 	const imgInput = $('<img src="img/icons/lock.png">');
-	const inputValidate = $('<input  type="text" class="validate" placeholder="-  -  -  -  -">');
+	const inputValidate = $('<input id="inputValidate" type="text" class="validate" placeholder="-  -  -  -  -">');
 	const pCode = $('<p></p>');
 	// const labelCode = $('<label for="filled-in-box center-align">Reintentar en <img src="img/icons/clock.png" alt="clock"> 21s</label>');
 

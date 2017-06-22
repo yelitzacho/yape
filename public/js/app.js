@@ -11,10 +11,15 @@ const render = (root) => {
   if (state.components === null) {
     container.append(Welcome(_=>render(root)));
   } else if (state.components === "RegisterNumber") {
-    container.append(RegisterNumber(update));
+    container.append(RegisterNumber(_=>render(root)));
   } else if (state.components === "RegisterCode") {
-    container.append(RegisterCode(update));
-  } 
+    container.append(RegisterCode(_=>render(root)));
+  } else if (state.components === "CreateUser") {
+    container.append(CreateUser(_=>render(root)));
+  } else if (state.components === "Check") {
+    container.append(Check(_=>render(root)));
+  }
+
   root.append(container);
   $('.carousel.carousel-slider').carousel({fullWidth: true});
 
@@ -23,17 +28,27 @@ const render = (root) => {
     update();
   });
 
-  $('#continue').attr('disabled','disabled');
+  $('#continue').on('click', function(){
+    state.components = "RegisterCode"
+    update();
+  });
 
-  $('#filled-in-box').change(function(){
-    if ($('#phone').val().length == 9 &&
-       ($('filled-in-box').prop('checked') == true)){
-          $('#continue').removeAttr('disabled');
+  $('#inputValidate').keyup(function(){
+    if ($(this).val() === 12345) {
+      state.components = "Check"
+      update();
     }
-  })
+  });
+
+  // $('#continue').attr('disabled','disabled');
 
 
-
+  // $('#filled-in-box').change(function(){
+  //   if ($('#phone').val().length == 9 &&
+  //      ($('filled-in-box').prop('checked') == true)){
+  //         $('#continue').removeAttr('disabled');
+  //   }
+  // })
 
   // let numberPattern = /\b[9]{1}[0-9]{8}\b/;
   // $('#phone').on('keyup', () =>{
@@ -53,8 +68,7 @@ const render = (root) => {
   //   }
   // }
 
-//   if () {}
-//   }
+
 //   if ($('#phone').val().length == 9 || isNaN($('#phone').val())) {
 //     return false;
 //   }
@@ -66,7 +80,6 @@ const render = (root) => {
 // function checkRadioBox(nameRadioBox) {
 //   return $(nameRadioBox).is(":checked") ? true : false;
 // }
-
 
   // function checkForm(idForm) {
   //   $(idForm)+" *".on("change keydown", function(){
